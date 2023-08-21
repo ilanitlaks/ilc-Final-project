@@ -1,0 +1,10 @@
+{
+  "prettier.proseWrap": "preserve",
+  "prettier.useEditorConfig": false,
+  "prettier.trailingComma": "all",
+  "prettier.arrowParens": "always",
+  "prettier.enable": true,
+  "prettier.useTabs": false,
+  "prettier.withNodeModules": false,
+  "editor.formatOnSave": true
+}

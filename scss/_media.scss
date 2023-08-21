@@ -1,0 +1,85 @@
+@media (man-width: 800px) {
+  #header-home {
+    min-height: 30rem;
+    .header-content {
+      padding-top: 5rem;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  #main-nav {
+    flex-direction: column;
+    align-items: center;
+    li {
+      padding: 1rem;
+    }
+  }
+  #header {
+    &-home {
+      height: 10rem;
+      border-bottom: 3px solid $main-color;
+      background-position: 20% 30%;
+      .header-content {
+        display: none;
+      }
+
+      #main-nav ul {
+        margin-top: 3rem;
+      }
+    }
+    &-inner {
+      height: 10rem;
+    }
+  }
+  #home-a .specials,
+  #home-b,
+  #home-c,
+  #about-d,
+  #contact-b,
+  .items,
+  .grid-4,
+  #about .about-info {
+    grid-template-columns: 1fr;
+  }
+  // .grid-4 {
+  //   grid-template-columns: repeat(1, 1fr);
+  // }
+  #about-c {
+    display: none;
+  }
+  #about-a .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "aw1"
+      "aw2"
+      "aw3";
+  }
+  #about-d .lead {
+    text-align: center;
+  }
+  #contact-a .text-fields {
+    grid-template-areas:
+      "name"
+      "email"
+      "subject"
+      "phone"
+      "message";
+  }
+  #main-footer {
+    height: 7rem;
+  }
+  #main-footer .footer-content {
+    flex-direction: column;
+    align-items: flex-end;
+    align-items: center;
+    height: fit-content;
+  }
+  #contact-b {
+    margin-bottom: 0.5rem;
+  }
+  #contact-c {
+    display: none;
+  }
+}
